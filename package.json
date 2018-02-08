@@ -1,0 +1,17 @@
+{
+  "name": "node-web-scraping",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "6.11.x",
+    "npm": "3.10.x"
+  },
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cheerio": "^1.0.0-rc.2",
+    "express": "~4.13.1",
+    "express-partials": "^0.3.0",
+    "request": "^2.83.0",
+    "ejs": "~2.5.5"
+  }
+}

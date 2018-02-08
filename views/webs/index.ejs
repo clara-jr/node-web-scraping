@@ -1,0 +1,25 @@
+<div class="container">
+	<div class="row">
+
+	<%if (JSON.parse(webs).length > 0) {%>
+
+			<%for (var w in JSON.parse(webs)) {%>
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<a href='/webs/<%=JSON.parse(webs)[w]._id%>' style="background-color:#fff; margin-bottom: 10px;" class="btn btn-default" type="button"><span class="glyphicon glyphicon-edit" style="font-size: 16px;"></span><%=JSON.parse(webs)[w].url%></a>
+					<a class="web" href='/webs/<%=JSON.parse(webs)[w]._id%>'>
+					<ul class="down" style="margin-left:auto;">
+						<li><p style="color:#337ab7;"><b>Genre:</b></p></li>
+					    <li role="separator" class="divider"></li>
+					    <li><p><%=JSON.parse(webs)[w].genre%></p></li>
+					</ul>
+				</div>
+
+			<%}%>
+
+	<%} else {%>
+		<p>Ups! You haven't uploaded any webs yet!</p>
+	<%}%>
+
+	</div>
+</div>
